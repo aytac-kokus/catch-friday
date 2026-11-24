@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en" data-standalone>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Catch Friday · erdetfredag.no</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./game.css">
+  <script type="module" src="./game.mjs"></script>
+</head>
+<body class="game-page">
+  <header class="site-header shell">
+    <button id="game-sound" type="button" aria-pressed="true" hidden>Sound</button>
+  </header>
+  <main class="game shell">
+    <h1 id="game-title">Catch Friday.</h1>
+    <p id="game-intro">Friday is on the run. You have one taco.</p>
+    <div class="game-stage" id="game-stage">
+      <canvas id="game-canvas" aria-hidden="true"></canvas>
+    </div>
+    <div class="game-controls">
+      <p id="game-status" role="status">Drop the taco just before Friday reaches the circle.</p>
+      <button class="game-button" id="game-action" type="button" disabled>Start</button>
+      <p id="game-key" class="game-key"><kbd>Space</kbd> or tap</p>
+    </div>
+  </main>
+</body>
+</html>
